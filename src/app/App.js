@@ -16,13 +16,13 @@ import "./App.css";
 
 const router = createBrowserRouter(createRoutesFromElements(
   <Route path="/" element={ <Root/> }>
-    <Route path="/about/:name" element={ <About/> } />
-    <Route path="/about" element={ <About/> } />
-    <Route path="/sign-up" element={ <SignUp/> } />
-    <Route path="/articles/:title" element={ <Articles/> } />
-    <Route path="/articles" element={ <Articles/> } />
-    <Route path="/categories" element={ <Categories/> } />
-    <Route path="/profile" element={ <Profile/> } />
+    <Route path="about" element={ <About/> } />
+    <Route path="authors/:name" element={ <Author/> } />
+    <Route path="sign-up" element={ <SignUp/> } />
+    <Route path="/articles/:title" element={ <Article/> } />
+    <Route path="articles" element={ <Articles/> } />
+    <Route path="categories" element={ <Categories/> } />
+    <Route path="profile" element={ <Profile/> } />
   </Route>
 ));
 
