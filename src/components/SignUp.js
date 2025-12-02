@@ -8,13 +8,11 @@ export default function SignUp () {
   const [username, setUsername] = useState("");
   const dispatch = useDispatch();
 
-   // Grab the navigate function
   const navigate = useNavigate();
 
   const handleSubmit = e => {
     e.preventDefault();
     dispatch(signUp({username: username}));
-    // imperatively redirect the user to /profile
     navigate('/profile');
   }
 
